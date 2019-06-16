@@ -1,2 +1,2 @@
 all:
-	g++ -g nrTest.cc
+	g++ -g nrTest.cc -o nrTest

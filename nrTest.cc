@@ -1,4 +1,4 @@
-// Simple Hello World
+// Simple Numerical Recipes Test in C++
  
 #include <iostream>
 
