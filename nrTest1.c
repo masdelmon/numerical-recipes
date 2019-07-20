@@ -12,7 +12,7 @@
  
 int main(void)
 {
-    MatDoub a[3][3];
+    MatDoub a(3,3);
     
     a[0][0] = 4;
     a[0][1] = 12;
@@ -30,16 +30,16 @@ int main(void)
     
     try
     {
-       Cholesky achol(a);
+       Cholesky achol(a);  
        
-       for(Int j=0; j<a.nrows(); j++)
+       for(Int j=0; j<3; j++)
        {
-           for(Int k=0; k<a.nrows(); k++)
+           for(Int k=0; k<3; k++)
            {
-               std::cout << achol.el[j][k]; 
+               std::cout << achol.el[j][k] << " ";
            } 
            std::cout << "\t" << std::endl;
-       }  
+       } 
     }
     catch(NRerror err)
     {
